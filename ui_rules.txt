@@ -1,0 +1,42 @@
+1. DESIGN PHILOSOPHY
+Visual: "Horological Cabinet" — the UI draws from the visual language of the specialist horological auction house, the observatory-grade watchmaker's bench, and the display cabinet of a national clock museum. These escapements are the most micro-mechanically precise objects in the entire series — some with components measured in hundredths of a millimetre, some running for centuries without service. The app should feel like the most refined, most exacting interface in the series: a jeweller's loupe held up to a digital catalog. Immaculate white space, sub-pixel precision in layout, and a palette that references the specific materials of the escapement itself.
+Mood: micro-precise, jeweller-serious, cabinet-quality, horology-obsessive, timepiece-reverential.
+Important: No clock face motifs used decoratively, no pendulum swing references, no gear illustrations as background elements. The escapement is not the clock — it is the mechanism inside the mechanism, the component that the entire horological tradition pivots on. The UI should honor that second-order precision: it is a catalog of the most critical component in the most precise instruments humans ever made by hand.
+
+2. COLORS
+#F9F8F6 — Main background (movement white — the specific bright, barely-warm white of a watchmaker's bench liner, optimized for seeing the smallest components clearly. The brightest background in the series.)
+#111010 — Primary text & high-contrast elements (pivot black — cool, dense, like the blued steel of a finished escapement wheel)
+#FFFFFF — Secondary panels / card surfaces
+#858480 — Secondary text / muted labels (jewel grey — cool and neutral, like the color of a synthetic ruby pallet stone)
+#2C5F8A — Primary accent (blued steel — the specific deep blue of heat-treated watch steel, the color of a finished lever arm or a marine detent spring after controlled oxidation. The most technically specific accent in the series — this blue is a metallurgical process, not a design choice)
+#E8E7E4 — Outline / stroke / dividers (movement plate rule lines, barely warm)
+#9C7B3A — Secondary accent (gilt movement gold — the warm gold of a gilded clock plate, a brass escape wheel in a regulator movement, the color of a signed movement bridge. For era tags, maker badges, and provenance indicators)
+#B03A2E — Critical errors only
+Important: Blued steel is the most technically earned accent color in the entire series — it is not chosen for its appearance but for its material meaning. Every horologist knows that blued steel is hardened and finished steel. It should carry that same sense of completed precision in the UI. Gilt movement gold is the color of the surrounding brasswork that holds the escapement — structural and beautiful, but secondary. The background is the brightest in the series because escapement work requires the most light.
+
+3. TYPOGRAPHY
+Display / Headings: Cormorant (weight 600–700) — returns here from the Galvanometer Gallery, where it carried the authority of university physics. Here it carries the authority of the horological specialist: the signed movement, the auction catalogue entry, the watchmaker's guild publication. At large sizes it has the precision of engraved lettering on a movement plate — fine, exact, and carrying centuries of craft tradition. Used for escapement names, maker names on detail views, and the app title.
+Body / Descriptions: Source Sans 3 (weight 300–400) — returns from the Chronometer Balance, where it proved itself as the typeface of technical horological documentation. For condition notes, service history, beat error specifications, and all prose fields.
+Monospace / Identifiers: IBM Plex Mono — for archive codes like EGH-MUDGE-LEVER-1769-GBR-LONDON-GUILD-001, beat rates (18,000 vph / 5 Hz), lift angles (52°), and all structured technical fields.
+Important: Cormorant at 26px and above only. Source Sans 3 for all reading-size text. IBM Plex Mono for every beat rate, angle, and archive code — escapement specifications are measured in arc-seconds and vibrations per hour, and the typography should feel calibrated to that precision.
+
+4. SURFACE & TEXTURE LANGUAGE
+
+Backgrounds: flat movement white — the flattest, brightest surface in the series. No warmth, no grain, no texture.
+Cards: pure white with a 1px border at #E8E7E4 and 8px corner radius — the tightest corner radius in the series, referencing the precision-machined edges of a movement plate
+Escapement geometry motif: each list card features a small SVG — a minimal schematic of the escapement type rendered in technical drawing style: the verge shown as a vertical arbor with two angled pallets, the lever as its characteristic T-shape with entry and exit stones, the detent as a delicate spring with a passing spring, the chronometer detent as its distinctive locking geometry. Rendered in blued steel for complete and operational mechanisms, gilt movement gold for display or incomplete condition. This is the most technically drawn motif in the series — escapement geometries are precise enough that horologists identify type from silhouette alone, and the SVG should honor that identification system.
+Beat rate badge: each card shows the escapement's beat rate in IBM Plex Mono — 18,000 vph, 21,600 vph, 36,000 vph — in a small cool-bordered pill. The defining operational frequency of any escapement.
+Photography: escapement photography under macro lighting on white — the pallet fork geometry, the escape wheel tooth form, or the detent spring assembly forward. Macro enough to see the jewel settings. No props, no movement context beyond the escapement itself.
+Maker and guild provenance tag: small pill showing the maker or institution — Mudge London, Breguet Paris, Arnold & Dent, NAWCC Collection — in blued steel at 10% opacity fill with full blue text
+
+
+5. INTERACTION PRINCIPLES
+
+Transitions: 200–240ms ease-out — precise and controlled, like a lever arm returning to its banking pin
+Selected state: blued steel left-border (3px) + faint #EEF3F8 background tint on active cards
+Empty states: NO ESCAPEMENTS IN THIS CABINET. in IBM Plex Mono, centered, jewel grey — one line
+Loading: a thin blued steel progress bar at screen top — the most precise loading indicator in the series
+Navigation: bottom tab bar — four tabs: Cabinet, Maker Map, Logbook, Settings. Active tab in blued steel.
+Escapement family filter: a first-class filter chip row — Verge & Foliot, Anchor / Recoil, Deadbeat, Lever, Detent / Chronometer, Co-axial — because escapement family is the primary taxonomic axis of horological classification, determining the instrument's era, precision class, and mechanical lineage, and it is the first question every collector and horologist asks about any movement
+
+Important: The escapement geometry SVG on each card is the most technically demanding motif in the series to draw correctly — and therefore the most rewarding when right. A lever escapement in schematic has a specific T-shape that is unmistakable. A detent escapement has a geometry that looks nothing like any other type. These silhouettes are a technical language that horologists read as fluently as letters. Blued steel means the escapement is complete, functional, and in running condition. Gilt gold means it is a display piece or missing components. The precision of the visual grammar should match the precision of the objects it describes.
